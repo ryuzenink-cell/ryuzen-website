@@ -1,0 +1,17 @@
+[
+  {
+    "title": "GitHub",
+    "url": "https://github.com/ryuzenink-cell",
+    "description": "My repositories and projects"
+  },
+  {
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/",
+    "description": "Professional profile"
+  },
+  {
+    "title": "Email",
+    "url": "mailto:ryuzen.ink@ryuzen.ink",
+    "description": "Send me a message"
+  }
+]
