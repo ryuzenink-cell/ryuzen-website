@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryuzen | Portfolio</title>
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Ryuzen</div>
+
+      <div class="nav-links">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./links.html">Links</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <h1>Hi, I'm Ryuzen 👋</h1>
+      <p class="subtitle">
+        C# / .NET Developer focused on APIs, automations and game development.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="./projects.html">View Projects</a>
+        <a class="btn" href="./links.html">My Links</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I build practical software solutions and modern websites, always aiming for clean code,
+        solid structure and great user experience.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">C#</span>
+        <span class="tag">.NET</span>
+        <span class="tag">Minimal APIs</span>
+        <span class="tag">SQL</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Automation</span>
+        <span class="tag">Game Development</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Live Stats</h2>
+      <p>
+        Visitors: <strong id="visitorCount">Loading...</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Ryuzen</small>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
