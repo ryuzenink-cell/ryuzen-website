@@ -24,6 +24,47 @@
   </header>
 
   <main class="container">
+
+    <div id="projectsContainer"></div>
+
+    <script>
+async function loadProjects() {
+  const container = document.getElementById("projectsContainer");
+  container.innerHTML = "Carregando projetos...";
+
+  try {
+    const res = await fetch("http://localhost:5000/api/projects");
+    const data = await res.json();
+
+    container.innerHTML = "";
+
+    data.forEach(p => {
+      const card = document.createElement("div");
+      card.className = "project-card";
+
+      card.innerHTML = `
+        <h3>${p.title}</h3>
+        <p>${p.description}</p>
+        <p><strong>Tecnologias:</strong> ${p.tech.join(", ")}</p>
+        <div class="project-links">
+          <a href="${p.githubUrl}" target="_blank">GitHub</a>
+          ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank">Live</a>` : ""}
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+
+  } catch (err) {
+    container.innerHTML = "Erro ao carregar projetos.";
+    console.error(err);
+  }
+}
+
+loadProjects();
+</script>
+
+
     <section class="card">
       <h1 class="page-title">Projects</h1>
       <p class="subtitle">
