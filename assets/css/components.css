@@ -205,3 +205,9 @@
   margin-top: 14px;
   flex-wrap: wrap;
 }
+
+.footer {
+  padding: 32px 0;
+  opacity: 0.8;
+  text-align: center;
+}
