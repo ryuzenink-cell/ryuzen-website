@@ -1,0 +1,18 @@
+[
+  {
+    "title": "HelpDesk - Ticket System",
+    "description": "A minimal ticket system with a clean UI, built to practice APIs and CRUD operations.",
+    "tags": ["C#", ".NET", "Minimal API", "SQLite", "HTML", "CSS", "JS"],
+    "repoUrl": "https://github.com/ryuzenink-cell",
+    "liveUrl": "",
+    "status": "In progress"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "My personal portfolio with a links hub and live stats (visitor counter).",
+    "tags": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    "repoUrl": "https://github.com/ryuzenink-cell/ryuzen-website",
+    "liveUrl": "",
+    "status": "Live"
+  }
+]

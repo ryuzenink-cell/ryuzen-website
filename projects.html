@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryuzen | Projects</title>
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Ryuzen</div>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./projects.html">Projects</a>
+        <a href="./links.html">Links</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1 class="page-title">Projects</h1>
+      <p class="subtitle">
+        A selection of projects I’ve built to practice real-world development.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="projects-header">
+        <h2>Featured</h2>
+        <button id="btnRefreshProjects" class="btn">Refresh</button>
+      </div>
+
+      <div id="projectsContainer" class="projects-grid">
+        <p class="subtitle">Loading projects...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Ryuzen</small>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/projects.js"></script>
+</body>
+</html>
